@@ -1,12 +1,37 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Inscription</h1>
 
+    <h1>Inscription</h1>
+<form method="post">
     {{ form_start(form) }}
+    {{ form_row(form.nom) }}
+    {{ form_row(form.prenom) }}
     {{ form_row(form.email) }}
     {{ form_row(form.password) }}
     {{ form_end(form) }}
+</form>
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+        }
+
+        form{
+            text-align: center;
+            margin-top: 10rem;
+
+
+        }
+
+        button{
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: green;
+        }
+
+
+    </style>
 
 
 {% endblock %}
