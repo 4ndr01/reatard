@@ -4,12 +4,4 @@ controllers:
 
 
 
-login:
-    path: /login
-    controller: App\Controller\LoginController::login
-    methods: [GET]
 
-
-inscription:
-    path: /inscription
-    controller: App\Controller\InscriptionController::showForm
